@@ -1,0 +1,231 @@
+    /* ===========================
+    Global
+    =========================== */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body,
+    #root {
+        width: 100%;
+        min-height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #edf2f7;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ===========================
+    App Layout
+    =========================== */
+
+    .app {
+        display: flex;
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        min-height: 100vh;
+
+        transition: all .3s ease;
+    }
+
+    /* ===========================
+    Sidebar Open
+    =========================== */
+
+    .main-open {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
+
+    /* ===========================
+    Sidebar Close
+    =========================== */
+
+    .main-close {
+        margin-left: 80px;
+        width: calc(100% - 80px);
+    }
+
+    /* ===========================
+    Main Pages
+    =========================== */
+
+    .post-list,
+    .create-post-page {
+        width: 100%;
+
+        margin-top: 90px;
+
+        padding: 20px;
+    }
+
+    .about-page,
+    .settings-page,
+    .edit-profile-page {
+        width: 100%;
+
+        margin-top: 5px;
+
+        padding: 20px;
+    }
+
+    /* ===========================
+    Posts
+    =========================== */
+
+    .post-list {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        min-height: calc(100vh - 90px);
+
+        overflow-x: hidden;
+    }
+
+    /* ===========================
+    Smooth Transition
+    =========================== */
+
+    .main,
+    .post-list {
+        transition: .3s ease;
+    }
+
+    /* ===========================
+    Large Desktop
+    =========================== */
+
+    @media (max-width:1400px){
+
+        .post-list{
+            gap:18px;
+            padding:18px;
+        }
+
+    }
+
+    /* ===========================
+    Laptop
+    =========================== */
+
+    @media (max-width:1200px){
+
+        .main-open{
+            margin-left:220px;
+            width:calc(100% - 220px);
+        }
+
+        .main-close{
+            margin-left:75px;
+            width:calc(100% - 75px);
+        }
+
+        .post-list{
+            gap:18px;
+            padding:18px;
+        }
+
+    }
+
+    /* ===========================
+    Tablet
+    =========================== */
+
+    @media (max-width:992px){
+
+        .main-open{
+            margin-left:200px;
+            width:calc(100% - 200px);
+        }
+
+        .main-close{
+            margin-left:70px;
+            width:calc(100% - 70px);
+        }
+
+        .post-list{
+            gap:16px;
+            padding:16px;
+        }
+
+    }
+
+    /* ===========================
+    Mobile
+    =========================== */
+
+    @media (max-width:768px){
+
+        .main-open{
+            margin-left:180px;
+            width:calc(100% - 180px);
+        }
+
+        .main-close{
+            margin-left:65px;
+            width:calc(100% - 65px);
+        }
+
+        .post-list,
+        .create-post-page,
+        .about-page,
+        .settings-page,
+        .edit-profile-page{
+
+            margin-top:80px;
+
+            padding:15px;
+
+            gap:15px;
+
+        }
+
+    }
+
+    /* ===========================
+    Small Mobile
+    =========================== */
+
+    @media (max-width:480px){
+
+        .main-open{
+            margin-left:160px;
+            width:calc(100% - 160px);
+        }
+
+        .main-close{
+            margin-left:60px;
+            width:calc(100% - 60px);
+        }
+
+        .post-list,
+        .create-post-page,
+        .about-page,
+        .settings-page,
+        .edit-profile-page{
+
+            padding:12px;
+
+            gap:12px;
+
+        }
+
+    }

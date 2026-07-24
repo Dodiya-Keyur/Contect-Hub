@@ -1,0 +1,473 @@
+/* ==========================
+   Header
+========================== */
+
+.header {
+    position: fixed;
+    top: 0;
+
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+
+    background: #111827;
+
+    border-bottom: 1px solid #273548;
+
+    z-index: 999;
+
+    transition: all 0.3s ease;
+}
+
+/* Sidebar Open */
+
+.header-open {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+/* Sidebar Close */
+
+.header-close {
+    left: 80px;
+    width: calc(100% - 80px);
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 25px;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.header-logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+.header-links {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 28px;
+
+    margin: 0;
+    padding: 0;
+
+    flex: 1;
+}
+
+.header-links li {
+    list-style: none;
+}
+
+.header-links a {
+    color: #d1d5db;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+.header-links a:hover {
+    color: #3b82f6;
+}
+
+/* ==========================
+   Right
+========================== */
+
+.header-right {
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    flex-shrink: 0;
+
+}
+
+/* ==========================
+   Search
+========================== */
+
+.search-box {
+
+    width: 390px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+
+    background: #1f2937;
+
+    border-radius: 30px;
+
+    padding: 0 18px;
+
+    border: 2px solid transparent;
+
+    transition: .3s;
+
+}
+
+.search-box:hover{
+    background:#293548;
+}
+
+.search-box:focus-within{
+
+    background:white;
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 0 4px rgba(59,130,246,.18);
+
+}
+
+.search-box i{
+
+    color:#94a3b8;
+
+    font-size:16px;
+
+    margin-right:12px;
+
+}
+
+.search-box input{
+
+    width:100%;
+    height:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    color:#111827;
+
+}
+
+.search-box input::placeholder{
+
+    color:#9ca3af;
+
+}
+
+/* ==========================
+   User
+========================== */
+
+.header-user{
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+}
+
+.header-user-image{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #3b82f6;
+
+}
+
+.header-user-info{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.header-user-info h5{
+
+    margin:0;
+
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+}
+
+.header-user-info small{
+
+    margin-top:2px;
+
+    color:#94a3b8;
+
+    font-size:12px;
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.login-btn{
+
+    width:100px;
+    height:40px;
+
+    border:1px solid white;
+
+    background:transparent;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#3b82f6;
+
+    border-color:#3b82f6;
+
+}
+
+.signup-btn{
+
+    width:110px;
+    height:40px;
+
+    border:none;
+
+    background:#fbbf24;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.signup-btn:hover{
+
+    background:#f59e0b;
+
+}
+
+/* ==========================
+   Large Laptop
+========================== */
+
+@media(max-width:1400px){
+
+    .search-box{
+
+        width:320px;
+
+    }
+
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media(max-width:1200px){
+
+    .header-open{
+
+        left:220px;
+        width:calc(100% - 220px);
+
+    }
+
+    .header-close{
+
+        left:75px;
+        width:calc(100% - 75px);
+
+    }
+
+    .search-box{
+
+        width:260px;
+
+    }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+    .header-open{
+
+        left:200px;
+        width:calc(100% - 200px);
+
+    }
+
+    .header-close{
+
+        left:70px;
+        width:calc(100% - 70px);
+
+    }
+
+    .header-links{
+
+        gap:18px;
+
+    }
+
+    .header-links a{
+
+        font-size:15px;
+
+    }
+
+    .search-box{
+
+        width:200px;
+
+    }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+    .header{
+
+        height:65px;
+
+        padding:0 15px;
+
+    }
+
+    .header-open{
+
+        left:180px;
+        width:calc(100% - 180px);
+
+    }
+
+    .header-close{
+
+        left:65px;
+        width:calc(100% - 65px);
+
+    }
+
+    .header-logo img{
+
+        width:36px;
+        height:36px;
+
+    }
+
+    .header-links{
+
+        display:none;
+
+    }
+
+    .search-box{
+
+        width:170px;
+
+    }
+
+    .header-user-info{
+
+        display:none;
+
+    }
+
+    .login-btn{
+
+        width:85px;
+
+    }
+
+    .signup-btn{
+
+        width:90px;
+
+    }
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media(max-width:576px){
+
+    .search-box{
+
+        display:none;
+
+    }
+
+    .login-btn{
+
+        width:75px;
+
+        font-size:13px;
+
+    }
+
+    .signup-btn{
+
+        width:80px;
+
+        font-size:13px;
+
+    }
+
+}

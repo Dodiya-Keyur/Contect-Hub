@@ -1,0 +1,290 @@
+/* ==========================
+   Settings Page
+========================== */
+
+.settings-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+}
+
+/* ==========================
+   Card
+========================== */
+
+.settings-card {
+    width: 100%;
+    max-width: 760px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 10px 35px rgba(15, 23, 42, 0.08),
+        0 2px 8px rgba(15, 23, 42, 0.04);
+
+    overflow: hidden;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.settings-header {
+    margin-bottom: 30px;
+}
+
+.settings-header h2 {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.settings-header p {
+    margin-top: 8px;
+
+    font-size: 15px;
+
+    color: #6b7280;
+}
+
+/* ==========================
+   Settings List
+========================== */
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* ==========================
+   Item
+========================== */
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 22px;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+.setting-item:hover {
+    transform: translateY(-3px);
+
+    background: #3b82f6;
+
+    color: #ffffff;
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 10px 25px rgba(59,130,246,.25);
+}
+
+/* ==========================
+   Left
+========================== */
+
+.setting-left {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.setting-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 20px;
+
+    transition: .3s;
+}
+
+.setting-item:hover .setting-icon {
+    background: rgba(255,255,255,.15);
+    color: white;
+}
+
+.setting-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.setting-title {
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #111827;
+
+    transition: .3s;
+}
+
+.setting-subtitle {
+    margin-top: 4px;
+
+    font-size: 13px;
+
+    color: #6b7280;
+
+    transition: .3s;
+}
+
+.setting-item:hover .setting-title,
+.setting-item:hover .setting-subtitle {
+    color: white;
+}
+
+/* ==========================
+   Right Arrow
+========================== */
+
+.setting-arrow {
+    font-size: 18px;
+
+    color: #94a3b8;
+
+    transition: .3s;
+}
+
+.setting-item:hover .setting-arrow {
+    color: white;
+    transform: translateX(6px);
+}
+
+/* ==========================
+   Danger
+========================== */
+
+.setting-item.danger:hover {
+    background: #ef4444;
+    border-color: #ef4444;
+
+    box-shadow: 0 10px 25px rgba(239,68,68,.25);
+}
+
+/* ==========================
+   Logout
+========================== */
+
+.setting-item.logout:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+
+    box-shadow: 0 10px 25px rgba(220,38,38,.25);
+}
+
+/* ==========================
+   Divider
+========================== */
+
+.settings-divider {
+    margin: 28px 0;
+
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px) {
+
+    .settings-page {
+        padding: 20px 12px;
+    }
+
+    .settings-card {
+        padding: 22px;
+    }
+
+    .settings-header h2 {
+        font-size: 26px;
+    }
+
+    .setting-item {
+        padding: 16px;
+    }
+
+    .setting-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+    .setting-title {
+        font-size: 15px;
+    }
+
+    .setting-subtitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .settings-card {
+        padding: 18px;
+    }
+
+    .setting-item {
+        padding: 14px;
+    }
+
+    .setting-left {
+        gap: 12px;
+    }
+
+    .setting-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .setting-title {
+        font-size: 14px;
+    }
+
+    .setting-subtitle {
+        font-size: 11px;
+    }
+
+    .setting-arrow {
+        font-size: 16px;
+    }
+}

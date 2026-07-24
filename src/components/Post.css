@@ -1,0 +1,292 @@
+/* ==========================
+   Feed
+========================== */
+
+.feed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ==========================
+   Post Card
+========================== */
+
+.post-container {
+    width: 100%;
+    max-width: 430px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+/* ==========================
+   Header
+========================== */
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+/* ==========================
+   Profile
+========================== */
+
+.post-profile-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3b82f6;
+    flex-shrink: 0;
+}
+
+/* ==========================
+   User Info
+========================== */
+
+.post-user-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-width: 0;
+}
+
+.post-user-name {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+}
+
+.post-user-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.post-profession {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.post-dot {
+    color: #9ca3af;
+}
+
+.post-date {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* ==========================
+   Delete
+========================== */
+
+.post-delete-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.post-delete-btn:hover {
+    background: #fee2e2;
+}
+
+.post-remove-icon {
+    font-size: 24px;
+    color: #ef4444;
+}
+
+/* ==========================
+   Caption
+========================== */
+
+.post-caption {
+    padding: 5px 20px 10px;
+}
+
+.post-caption p {
+    margin: 0;
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* ==========================
+   Image
+========================== */
+
+.post-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================
+   Location
+========================== */
+
+.post-location {
+    padding: 12px 16px 6px;
+}
+
+.post-location p {
+    margin: 0;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* ==========================
+   Tags
+========================== */
+
+.post-tags {
+    padding: 4px 16px 12px;
+}
+
+.post-tags p {
+    margin: 0;
+    font-size: 14px;
+    color: #2563eb;
+}
+
+/* ==========================
+   Stats
+========================== */
+
+.post-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-top: 1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.post-stat-item {
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================
+   Actions
+========================== */
+
+.post-actions {
+    display: flex;
+}
+
+.post-action-btn {
+    flex: 1;
+    border: none;
+    background: white;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.post-action-btn:hover {
+    background: #f3f4f6;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:992px) {
+
+    .post-container {
+        max-width: 380px;
+    }
+
+    .post-image {
+        height: 240px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .post-container {
+        max-width: 100%;
+    }
+
+    .post-header {
+        padding: 12px;
+    }
+
+    .post-profile-img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .post-user-name {
+        font-size: 18px;
+    }
+
+    .post-profession {
+        font-size: 13px;
+    }
+
+    .post-date {
+        font-size: 12px;
+    }
+
+    .post-image {
+        height: 220px;
+    }
+
+    .post-action-btn {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .post-image {
+        height: 190px;
+    }
+
+    .post-stats {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+
+}
