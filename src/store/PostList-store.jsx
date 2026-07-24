@@ -17,7 +17,7 @@ const DefaultPosts = [
         profileImage: "https://d23.com/app/uploads/2013/04/Marvel-Entertainment-1180x600.jpg",
 
         Image:
-            "src/assets/IronMan.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-UIyixs7qcJiDN4T9P5D2gIr5YB-Yz98SImZ5NmT2bg&s=10",
         Caption: "IronMan Still Alive In All Hearts",
         Location: "India",
         Tags: "#IronMan #Marvel #InfinityWar #Avengers",
@@ -43,7 +43,7 @@ const DefaultPosts = [
         profession: "Car Company",
         profileImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnavXX0P9nP4QHkylo-NoMr1Sd9-O0d0xngf9A6nV9Tw&s=10",
 
-        Image: "src/assets/AMG GT.png",
+        Image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxHCKYyvtNf8yoAEWDE1VT2311klINb4NFZlXJRQUAsityfma_",
         Caption: "This is a Mercedes AMG GT Made By Mercedes.",
         Location: "India",
         Tags: "#Mercedes #MercedesAmgGt #Car",
