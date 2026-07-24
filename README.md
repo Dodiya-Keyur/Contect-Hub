@@ -12,12 +12,6 @@
 
 A modern social media web application built with **React** that allows users to create, explore, and interact with posts in a clean and responsive interface.
 
-A modern social media web application built with **React** that allows
-users to create, explore, and interact with posts in a clean and
-responsive interface. Content Hub focuses on providing a simple and
-engaging user experience with features like post creation, search
-functionality, authentication, and an attractive UI.
-
 ------------------------------------------------------------------------
 ## 📸 Screenshots
 
@@ -105,15 +99,11 @@ Content-Hub/
 # 🚀 Getting Started
 
 ``` bash
-git clone https://github.com/your-username/Content-Hub.git
+git repo : https://github.com/Dodiya-Keyur/Contect-Hub
 cd Content-Hub
 npm install
 npm run dev
 ```
-
-Open:
-
-    http://localhost:5173
 
 ------------------------------------------------------------------------
 
