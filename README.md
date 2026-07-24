@@ -7,6 +7,40 @@ engaging user experience with features like post creation, search
 functionality, authentication, and an attractive UI.
 
 ------------------------------------------------------------------------
+## 📸 Screenshots
+
+### 🏠 Home
+
+![Home](./src/ScreenShots/Home.png)
+
+The Home page displays all user posts in a clean and responsive feed. Users can like, comment, share, search posts by tags, and delete their own posts.
+
+---
+
+### ➕ Create Post
+
+![Create Post](./src/ScreenShots/Create-post.png)
+
+The Create Post page allows users to upload an image, write a caption, add a location, include tags, and publish a new post instantly.
+
+---
+
+### 👤 About
+
+![About](./src/ScreenShots/About.png)
+
+The About page introduces the Content Hub project, its purpose, technologies used, and developer information in a modern and user-friendly layout.
+
+---
+
+### 🔐 Login
+
+![Login](./src/ScreenShots/Login.png)
+
+The Login page provides secure user authentication with email and password validation, allowing registered users to access their accounts.
+
+```
+------------------------------------------------------------------------
 
 # 📌 Features
 
