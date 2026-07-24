@@ -105,7 +105,7 @@ npm run preview
 
 # 🌐 Deployment
 
-Deploy easily with Vercel.
+Link : https://contect-hub.vercel.app/
 
 ------------------------------------------------------------------------
 
