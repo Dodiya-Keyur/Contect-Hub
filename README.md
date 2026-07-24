@@ -1,5 +1,17 @@
 # Content Hub
 
+![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-purple?style=for-the-badge&logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript)
+![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
+![Node.js](https://img.shields.io/badge/Node.js-Green?style=for-the-badge&logo=node.js)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge&logo=bootstrap)
+![Git](https://img.shields.io/badge/Git-orange?style=for-the-badge&logo=git)
+![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)
+
+A modern social media web application built with **React** that allows users to create, explore, and interact with posts in a clean and responsive interface.
+
 A modern social media web application built with **React** that allows
 users to create, explore, and interact with posts in a clean and
 responsive interface. Content Hub focuses on providing a simple and
